@@ -3,400 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Tea Machinery Industries | Howrah</title>
   <meta name="description" content="Tea Machinery Industries - Manufacturer of Mechanical Engineering products and General Order Supplier in Howrah.">
-
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #222;
-      background: #f7f8f5;
-      line-height: 1.6;
-    }
-
-    /* Header */
-    header {
-      background: #173d2b;
-      color: white;
-      padding: 18px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .logo {
-      font-size: 22px;
-      font-weight: bold;
-      letter-spacing: 0.5px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 25px;
-      font-size: 15px;
-    }
-
-    nav a:hover {
-      color: #d8b35a;
-    }
-
-    /* Hero */
-    .hero {
-      min-height: 560px;
-      padding: 80px 8%;
-      display: flex;
-      align-items: center;
-      background:
-        linear-gradient(90deg, rgba(18, 54, 37, 0.97), rgba(18, 54, 37, 0.78)),
-        #173d2b;
-      color: white;
-    }
-
-    .hero-content {
-      max-width: 750px;
-    }
-
-    .small-title {
-      color: #d8b35a;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 14px;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-
-    h1 {
-      font-size: 56px;
-      line-height: 1.1;
-      margin-bottom: 15px;
-    }
-
-    .motto {
-      font-size: 24px;
-      color: #d8b35a;
-      margin-bottom: 25px;
-      font-weight: bold;
-    }
-
-    .hero p {
-      font-size: 19px;
-      max-width: 650px;
-      color: #e5e9e6;
-      margin-bottom: 35px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 26px;
-      background: #d8b35a;
-      color: #173d2b;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 4px;
-      margin-right: 10px;
-      margin-bottom: 10px;
-    }
-
-    .btn-outline {
-      background: transparent;
-      border: 1px solid #fff;
-      color: #fff;
-    }
-
-    /* Sections */
-    section {
-      padding: 80px 8%;
-    }
-
-    .section-title {
-      color: #173d2b;
-      font-size: 34px;
-      margin-bottom: 15px;
-    }
-
-    .gold-line {
-      width: 60px;
-      height: 4px;
-      background: #d8b35a;
-      margin-bottom: 30px;
-    }
-
-    .about {
-      background: white;
-    }
-
-    .about-content {
-      max-width: 850px;
-    }
-
-    .about p {
-      font-size: 18px;
-      color: #555;
-    }
-
-    /* Values */
-    .values {
-      background: #f1f3ef;
-      text-align: center;
-    }
-
-    .values .gold-line {
-      margin: 0 auto 40px;
-    }
-
-    .value-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .value-card {
-      background: white;
-      padding: 40px 25px;
-      border-top: 4px solid #d8b35a;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    }
-
-    .value-card h3 {
-      color: #173d2b;
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    /* Contact */
-    .contact {
-      background: #173d2b;
-      color: white;
-    }
-
-    .contact .section-title {
-      color: white;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      max-width: 1000px;
-    }
-
-    .contact-item {
-      margin-bottom: 25px;
-    }
-
-    .contact-item strong {
-      display: block;
-      color: #d8b35a;
-      margin-bottom: 5px;
-      text-transform: uppercase;
-      font-size: 13px;
-      letter-spacing: 1px;
-    }
-
-    .contact-item p,
-    .contact-item a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    .call-box {
-      border: 1px solid rgba(255,255,255,0.2);
-      padding: 30px;
-      align-self: start;
-    }
-
-    .call-box h3 {
-      font-size: 25px;
-      margin-bottom: 10px;
-    }
-
-    .call-box p {
-      color: #d8ded9;
-      margin-bottom: 20px;
-    }
-
-    footer {
-      background: #0e291d;
-      color: #aebbb3;
-      text-align: center;
-      padding: 22px;
-      font-size: 14px;
-    }
-
-    /* Mobile */
-    @media (max-width: 750px) {
-      header {
-        padding: 18px 6%;
-      }
-
-      nav {
-        display: none;
-      }
-
-      .hero {
-        padding: 70px 6%;
-        min-height: 520px;
-      }
-
-      h1 {
-        font-size: 39px;
-      }
-
-      .motto {
-        font-size: 20px;
-      }
-
-      section {
-        padding: 60px 6%;
-      }
-
-      .value-grid,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-    }
+    *{margin:0;padding:0;box-sizing:border-box} html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;color:#222;background:#f7f8f5;line-height:1.6}
+    header{background:#173d2b;color:#fff;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;position:sticky;top:0;z-index:20}
+    .logo{font-size:22px;font-weight:700;letter-spacing:.5px} nav a{color:#fff;text-decoration:none;margin-left:25px;font-size:15px} nav a:hover{color:#d8b35a}
+    .hero{min-height:560px;padding:80px 8%;display:flex;align-items:center;background:linear-gradient(110deg,#123625 0%,#173d2b 65%,#234d38 100%);color:#fff}
+    .hero-content{max-width:760px}.eyebrow{color:#d8b35a;text-transform:uppercase;letter-spacing:3px;font-size:14px;font-weight:700;margin-bottom:15px}
+    h1{font-size:56px;line-height:1.1;margin-bottom:15px}.motto{font-size:24px;color:#d8b35a;margin-bottom:25px;font-weight:700}.hero p{font-size:19px;max-width:650px;color:#e5e9e6;margin-bottom:35px}
+    .btn{display:inline-block;padding:14px 26px;background:#d8b35a;color:#173d2b;text-decoration:none;font-weight:700;border-radius:4px;margin:0 10px 10px 0}.btn-outline{background:transparent;border:1px solid #fff;color:#fff}
+    section{padding:80px 8%}.section-title{color:#173d2b;font-size:34px;margin-bottom:15px}.gold-line{width:60px;height:4px;background:#d8b35a;margin-bottom:30px}.about{background:#fff}.about-content{max-width:850px}.about p{font-size:18px;color:#555}
+    .products{background:#f1f3ef}.products-intro{max-width:760px;color:#5b625d;font-size:17px;margin-bottom:32px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1200px}
+    .product-card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 8px 26px rgba(0,0,0,.08);transition:transform .2s ease,box-shadow .2s ease}
+    .product-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.12)}
+    .product-card img{width:100%;height:360px;object-fit:cover;display:block;background:#ddd}
+    .product-copy{padding:22px}.product-copy h3{color:#173d2b;font-size:20px;margin-bottom:7px}.product-copy p{color:#666;font-size:15px}
+    .values{text-align:center;background:#fff}.values .gold-line{margin:0 auto 40px}.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;max-width:1000px;margin:auto}.value-card{background:#f7f8f5;padding:40px 25px;border-top:4px solid #d8b35a}.value-card h3{color:#173d2b;font-size:22px;margin-bottom:10px}
+    .contact{background:#173d2b;color:#fff}.contact .section-title{color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;max-width:1000px}.contact-item{margin-bottom:25px}.contact-item strong{display:block;color:#d8b35a;margin-bottom:5px;text-transform:uppercase;font-size:13px;letter-spacing:1px}.contact-item p,.contact-item a{color:#fff;text-decoration:none;font-size:18px}.call-box{border:1px solid rgba(255,255,255,.2);padding:30px;align-self:start}.call-box h3{font-size:25px;margin-bottom:10px}.call-box p{color:#d8ded9;margin-bottom:20px}
+    footer{background:#0e291d;color:#aebbb3;text-align:center;padding:22px;font-size:14px}
+    @media(max-width:850px){nav{display:none}.hero{padding:70px 6%;min-height:520px}h1{font-size:40px}section{padding:60px 6%}.gallery,.value-grid,.contact-grid{grid-template-columns:1fr}.product-card img{height:420px}}
+    @media(max-width:500px){.product-card img{height:330px}.logo{font-size:18px}}
   </style>
 </head>
-
 <body>
-
-  <header>
-    <div class="logo">TEA MACHINERY INDUSTRIES</div>
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#values">Our Values</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-
-  <main>
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-content">
-        <div class="small-title">Mechanical Engineering</div>
-
-        <h1>Tea Machinery Industries</h1>
-
-        <div class="motto">Speed. Quality. Consistency.</div>
-
-        <p>
-          Manufacturer of Mechanical Engineering products
-          &amp; General Order Supplier.
-        </p>
-
-        <a href="tel:+919168386324" class="btn">Call Us</a>
-        <a href="#contact" class="btn btn-outline">Contact Details</a>
-      </div>
-    </section>
-
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <div class="about-content">
-        <h2 class="section-title">About Us</h2>
-        <div class="gold-line"></div>
-
-        <p>
-          <strong>Tea Machinery Industries</strong> is engaged in the
-          manufacturing of Mechanical Engineering products and operates
-          as a General Order Supplier. Based in Howrah, West Bengal,
-          we are committed to serving our customers with a focus on
-          dependable service and consistent workmanship.
-        </p>
-      </div>
-    </section>
-
-
-    <!-- VALUES -->
-    <section class="values" id="values">
-      <h2 class="section-title">What We Stand For</h2>
-      <div class="gold-line"></div>
-
-      <div class="value-grid">
-        <div class="value-card">
-          <h3>Speed</h3>
-          <p>Responsive service and efficient execution of customer requirements.</p>
-        </div>
-
-        <div class="value-card">
-          <h3>Quality</h3>
-          <p>A commitment to quality workmanship across our engineering services.</p>
-        </div>
-
-        <div class="value-card">
-          <h3>Consistency</h3>
-          <p>Reliable service and a consistent approach to every order we undertake.</p>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-      <h2 class="section-title">Get In Touch</h2>
-      <div class="gold-line"></div>
-
-      <div class="contact-grid">
-
-        <div>
-          <div class="contact-item">
-            <strong>Company</strong>
-            <p>Tea Machinery Industries</p>
-          </div>
-
-          <div class="contact-item">
-            <strong>Address</strong>
-            <p>
-              12/4, Hem Chakraborty Lane<br>
-              Howrah - 711104<br>
-              West Bengal, India
-            </p>
-          </div>
-
-          <div class="contact-item">
-            <strong>Mobile</strong>
-            <a href="tel:+919168386324">+91 91683 86324</a>
-          </div>
-        </div>
-
-        <div class="call-box">
-          <h3>Have an enquiry?</h3>
-          <p>
-            Contact Tea Machinery Industries to discuss your
-            mechanical engineering or general supply requirements.
-          </p>
-
-          <a href="tel:+919168386324" class="btn">Call +91 91683 86324</a>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-
-  <footer>
-    &copy; 2026 Tea Machinery Industries. All Rights Reserved.
-  </footer>
-
-</body>
-</html>
+<header>
+  <div class="logo">TEA MACHINERY INDUSTRIES</div>
+  <nav><a href="#about">About</a><a href="#products">Finished Products</a><a href="#values">Our Values</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">Mechanical Engineering</div>
+      <h1>Tea Machinery Industries</h1>
+      <div class="motto">Speed. Quality. Consistency.</div>
+      <p>Manufacturer of Mechanical Engineering products &amp; General Order Supplier.</p>
+      <a href="tel:+919168386324" class="btn">Call Us</a><a href="#products" class="btn btn-outline">View Our Work</a>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="about-content"><h2 class="section-title">About Us</h2><div class="gold-line"></div>
+      <p><strong>Tea Machinery Industries</strong> is engaged in the manufacturing of Mechanical Engineering products and operates as a General Order Supplier. Based in Howrah, West Bengal, we are committed to serving our customers with a focus on dependable service and consistent workmanship.</p>
+    </div>
+  </section>
+  <section class="products" id="products">
+    <h2 class="section-title">Finished Products</h2><div class="gold-line"></div>
+    <p class="products-intro">A selection of components manufactured and finished by Tea Machinery Industries. We undertake mechanical engineering work and general-order requirements to customer specifications.</p>
+    <div class="gallery">
+      <article class="product-card"><img src="images/machined-shafts.jpg" alt="Machined shafts and threaded components manufactured by Tea Machinery Industries" loading="lazy"><div class="product-copy"><h3>Machined Shafts &amp; Components</h3><p>Precision-machined industrial components prepared for engineering applications.</p></div></article>
+      <article class="product-card"><img src="images/fabricated-component.jpg" alt="Fabricated mechanical component manufactured by Tea Machinery Industries" loading="lazy"><div class="product-copy"><h3>Fabricated Components</h3><p>Custom mechanical components manufactured for specific industrial requirements.</p></div></article>
+      <article class="product-card"><img src="images/industrial-gear.jpg" alt="Large industrial gear manufactured by Tea Machinery Industries" loading="lazy"><div class="product-copy"><h3>Industrial Gears</h3><p>Heavy-duty geared components for mechanical and industrial applications.</p></div></article>
+    </div>
+  </section>
+  <section class="values" id="values"><h2 class="section-title">What We Stand For</h2><div class="gold-line"></div><div class="value-grid">
+    <div class="value-card"><h3>Speed</h3><p>Responsive service and efficient execution of customer requirements.</p></div>
+    <div class="value-card"><h3>Quality</h3><p>A commitment to quality workmanship across our engineering services.</p></div>
+    <div class="value-card"><h3>Consistency</h3><p>Reliable service and a consistent approach to every order we undertake.</p></div>
+  </div></section>
+  <section class="contact" id="contact"><h2 class="section-title">Get In Touch</h2><div class="gold-line"></div><div class="contact-grid">
+    <div><div class="contact-item"><strong>Company</strong><p>Tea Machinery Industries</p></div><div class="contact-item"><strong>Address</strong><p>12/4, Hem Chakraborty Lane<br>Howrah - 711104<br>West Bengal, India</p></div><div class="contact-item"><strong>Mobile</strong><a href="tel:+919168386324">+91 91683 86324</a></div></div>
+    <div class="call-box"><h3>Have an enquiry?</h3><p>Contact Tea Machinery Industries to discuss your mechanical engineering or general supply requirements.</p><a href="tel:+919168386324" class="btn">Call +91 91683 86324</a></div>
+  </div></section>
+</main>
+<footer>&copy; 2026 Tea Machinery Industries. All Rights Reserved.</footer>
+</body></html>
